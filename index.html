@@ -24,12 +24,13 @@
     </div>
 
     <!-- NAV LINKS -->
-    <nav class="hidden md:flex space-x-8 text-sm tracking-wide">
-      <a href="#" class="hover:text-yellow-400 transition">首頁</a>
-      <a href="#services" class="hover:text-yellow-400 transition">服務</a>
-      <a href="#cases" class="hover:text-yellow-400 transition">案例</a>
-      <a href="#contact" class="hover:text-yellow-400 transition">聯絡我們</a>
-    </nav>
+  <nav class="hidden md:flex space-x-8 text-sm tracking-wide">
+  <a href="#" class="hover:text-yellow-400 transition">首頁</a>
+  <a href="#services" class="hover:text-yellow-400 transition">服務</a>
+  <a href="#cases" class="hover:text-yellow-400 transition">案例</a>
+  <a href="#team" class="hover:text-yellow-400 transition">專業團隊</a>
+  <a href="#contact" class="hover:text-yellow-400 transition">聯絡我們</a>
+</nav>
 
   </div>
 </header>
@@ -67,7 +68,7 @@
 </section>
 
 <!-- SERVICES -->
-<section class="py-12 px-6 text-center">
+<section id="services" class="py-12 px-6 text-center">
   <h2 class="text-3xl font-bold mb-8">服務範圍　一站式全面裝修</h2>
   <div class="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-y-4 gap-x-6 text-sm md:text-base">
     <div class="flex items-center justify-center space-x-2"><span class="text-yellow-400">•</span><span>室內設計</span></div>
@@ -81,10 +82,10 @@
   </div>
 </section>
 
-<!-- ✅ 代表工程案例（已移上） -->
-<section class="py-20 px-6">
+<!-- ✅ 工程案例（已移上） -->
+<section id="cases" class="py-20 px-6">
   <div class="max-w-6xl mx-auto text-center">
-    <h2 class="text-3xl font-bold mb-6">代表工程案例</h2>
+    <h2 class="text-3xl font-bold mb-6">工程案例</h2>
 
     <div class="flex justify-center gap-4 mb-10">
       <button onclick="filterSelection('all')" class="bg-yellow-500 text-gray-900 px-4 py-2 rounded">全部</button>
@@ -122,7 +123,7 @@
       </div>
 
  <div class="case-item hos bg-gray-800 p-6 rounded text-left">
-        <h3 class="text-yellow-400 font-semibold mb-2">清析項目 · 60萬</h3>
+        <h3 class="text-yellow-400 font-semibold mb-2">清拆項目</h3>
         <div class="relative overflow-hidden rounded mb-4">
           <img src="images/before.jpg" class="w-full">
           <div id="overlay2" class="absolute inset-0 overflow-hidden" style="width:50%">
@@ -152,7 +153,7 @@
 </section>
 
 <!-- ✅ 專業團隊（已移下） -->
-<section class="py-20 px-6 bg-gray-800 text-center">
+<section id="team" class="py-20 px-6 bg-gray-800 text-center">
   <h2 class="text-3xl font-bold mb-12">專業團隊</h2>
   <div class="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto">
 
@@ -230,8 +231,7 @@
 </footer>
 
 <!-- FLOATING WHATSAPP BUTTON -->
-<a href="https://wa.me/85260988309?text=你好，我想查詢裝修工程。%0A%0A裝修預算：%0A1️⃣ 40-60萬%0A2️⃣ 60-100萬%0A3️⃣ 100-200萬%0A%0A請聯絡我，謝謝。"
-   target="_blank"
+<button onclick="openWhatsAppSelector()"
    class="fixed bottom-6 right-6 z-50 flex items-center space-x-3 
           bg-green-500 hover:bg-green-400 text-white 
           px-6 py-4 rounded-full shadow-2xl 
@@ -241,11 +241,11 @@
        class="w-6 h-6" 
        fill="currentColor" 
        viewBox="0 0 24 24">
-    <path d="M20.52 3.48A11.83 11.83 0 0012.03 0C5.39 0 .01 5.38.01 12.03c0 2.12.55 4.19 1.6 6.02L0 24l6.12-1.6a11.96 11.96 0 005.91 1.5h.01c6.64 0 12.02-5.38 12.02-12.03 0-3.21-1.25-6.22-3.54-8.39zM12.04 21.4c-1.86 0-3.69-.5-5.3-1.46l-.38-.22-3.63.95.97-3.54-.25-.36a9.36 9.36 0 01-1.44-5.05c0-5.17 4.21-9.38 9.39-9.38 2.5 0 4.85.97 6.61 2.74a9.29 9.29 0 012.75 6.64c0 5.18-4.21 9.39-9.39 9.39zm5.14-7.03c-.28-.14-1.65-.81-1.9-.9-.26-.09-.45-.14-.64.14-.19.28-.74.9-.91 1.09-.17.19-.33.21-.61.07-.28-.14-1.19-.44-2.26-1.41-.83-.74-1.39-1.66-1.56-1.94-.16-.28-.02-.43.12-.57.12-.12.28-.31.42-.47.14-.16.19-.28.28-.47.09-.19.05-.35-.02-.49-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.47-.64-.48l-.55-.01c-.19 0-.49.07-.74.35-.26.28-.98.96-.98 2.33s1 2.69 1.14 2.87c.14.19 1.96 3 4.75 4.21.66.29 1.18.46 1.59.59.67.21 1.28.18 1.76.11.54-.08 1.65-.67 1.88-1.32.23-.65.23-1.21.16-1.32-.07-.12-.26-.19-.54-.33z"/>
+    <path d="M20.52 3.48A11.83 11.83 0 0012.03 0C5.39 0 .01 5.38.01 12.03c0 2.12.55 4.19 1.6 6.02L0 24l6.12-1.6a11.96 11.96 0 005.91 1.5h.01c6.64 0 12.02-5.38 12.02-12.03 0-3.21-1.25-6.22-3.54-8.39z"/>
   </svg>
 
   <span class="hidden md:inline">WhatsApp 即時查詢</span>
-</a>
+</button>
 
 <script>
 function slide(range, overlayId){
@@ -269,6 +269,32 @@ document.getElementById("leadForm").addEventListener("submit",function(e){
   this.classList.add("hidden");
   document.getElementById("successMessage").classList.remove("hidden");
 });
+
+function openWhatsAppSelector(){
+  let choice = prompt(
+`請選擇單位面積：
+1️⃣ 400尺或以下
+2️⃣ 401-800尺
+3️⃣ 801-1200尺
+4️⃣ 1201尺以上`
+  );
+
+  if(!choice) return;
+
+  let sizeText = "";
+
+  if(choice == "1") sizeText = "400尺或以下單位";
+  if(choice == "2") sizeText = "401-800尺單位";
+  if(choice == "3") sizeText = "801-1200尺單位";
+  if(choice == "4") sizeText = "1201尺以上單位";
+
+  if(sizeText !== ""){
+    let message = `你好，我想查詢裝修工程。%0A%0A單位面積：${sizeText}%0A%0A請聯絡我，謝謝。`;
+    window.open("https://wa.me/85265988309?text=" + message, "_blank");
+  }
+}
+
+
 </script>
 
 </body>
