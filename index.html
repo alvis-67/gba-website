@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Goodwill Build Alliance</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-900 text-gray-100 font-sans">
+
+<!-- HERO -->
+<section class="py-20 px-6 text-center bg-gradient-to-b from-gray-900 to-gray-800">
+  <div class="max-w-4xl mx-auto">
+    <h1 class="text-3xl md:text-5xl font-bold mb-6">
+      GBA
+    </h1>
+    <p class="text-lg md:text-xl text-gray-300 mb-6">
+      由專業工程老闆團隊組成
+    </p>
+    <p class="text-lg text-gray-400 mb-10">
+      專注HK$40萬–200萬住宅全屋翻新 · 統一協調管理 · 透明報價
+    </p>
+    <a href="#contact" class="bg-yellow-500 text-gray-900 px-8 py-4 rounded-lg font-semibold hover:bg-yellow-400">
+      免費獲取報價建議
+    </a>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="py-20 px-6 text-center">
+  <h2 class="text-3xl font-bold mb-12">服務範圍</h2>
+  <div class="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto">
+    <div class="bg-gray-800 p-6 rounded-lg">全屋翻新</div>
+    <div class="bg-gray-800 p-6 rounded-lg">水電工程</div>
+    <div class="bg-gray-800 p-6 rounded-lg">泥水油漆</div>
+    <div class="bg-gray-800 p-6 rounded-lg">微水泥工程</div>
+    <div class="bg-gray-800 p-6 rounded-lg">不銹鋼玻璃</div>
+    <div class="bg-gray-800 p-6 rounded-lg">清拆工程</div>
+    <div class="bg-gray-800 p-6 rounded-lg">傢私訂製</div>
+    <div class="bg-gray-800 p-6 rounded-lg">棚架工程</div>
+  </div>
+</section>
+
+<!-- TEAM (8 MEMBERS) -->
+<section class="py-20 px-6 bg-gray-800 text-center">
+  <h2 class="text-3xl font-bold mb-12">專業團隊</h2>
+
+  <div class="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto">
+
+    <div class="bg-gray-900 p-6 rounded">
+      <img src="images/albert.jpeg" class="w-full h-40 object-cover rounded mb-4">
+      <h3 class="text-yellow-400 font-semibold">Albert Wan</h3>
+      <p class="text-sm text-gray-400">水電工程 · 30年經驗</p>
+    </div>
+
+    <div class="bg-gray-900 p-6 rounded">
+      <img src="images/ken.jpeg" class="w-full h-40 object-cover rounded mb-4">
+      <h3 class="text-yellow-400 font-semibold">Ken Leung</h3>
+      <p class="text-sm text-gray-400">泥水油漆 · 15年經驗</p>
+    </div>
+
+    <div class="bg-gray-900 p-6 rounded">
+      <img src="images/alice.jpeg" class="w-full h-40 object-cover rounded mb-4">
+      <h3 class="text-yellow-400 font-semibold">Alice Chan</h3>
+      <p class="text-sm text-gray-400">微水泥總代理</p>
+    </div>
+
+    <div class="bg-gray-900 p-6 rounded">
+      <img src="images/christy.jpeg" class="w-full h-40 object-cover rounded mb-4">
+      <h3 class="text-yellow-400 font-semibold">Christy Lau</h3>
+      <p class="text-sm text-gray-400">室內設計</p>
+    </div>
+
+    <div class="bg-gray-900 p-6 rounded">
+      <img src="images/rex.jpeg" class="w-full h-40 object-cover rounded mb-4">
+      <h3 class="text-yellow-400 font-semibold">Rex Ho</h3>
+      <p class="text-sm text-gray-400">不銹鋼玻璃工程</p>
+    </div>
+
+    <div class="bg-gray-900 p-6 rounded">
+      <img src="images/derek.jpeg" class="w-full h-40 object-cover rounded mb-4">
+      <h3 class="text-yellow-400 font-semibold">Derek Yu</h3>
+      <p class="text-sm text-gray-400">清拆工程</p>
+    </div>
+
+    <div class="bg-gray-900 p-6 rounded">
+      <img src="images/marcus.jpeg" class="w-full h-40 object-cover rounded mb-4">
+      <h3 class="text-yellow-400 font-semibold">Axxx xxx</h3>
+      <p class="text-sm text-gray-400">全屋傢私訂製</p>
+    </div>
+
+    <div class="bg-gray-900 p-6 rounded">
+      <img src="images/yc.jpeg" class="w-full h-40 object-cover rounded mb-4">
+      <h3 class="text-yellow-400 font-semibold">YC Kwok</h3>
+      <p class="text-sm text-gray-400">棚架工程</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- HIGH END CASE GALLERY -->
+<section class="py-20 px-6">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-6">代表工程案例</h2>
+
+    <div class="flex justify-center gap-4 mb-10">
+      <button onclick="filterSelection('all')" class="bg-yellow-500 text-gray-900 px-4 py-2 rounded">全部</button>
+      <button onclick="filterSelection('luxury')" class="bg-gray-700 px-4 py-2 rounded">豪宅</button>
+      <button onclick="filterSelection('hos')" class="bg-gray-700 px-4 py-2 rounded">居屋</button>
+      <button onclick="filterSelection('old')" class="bg-gray-700 px-4 py-2 rounded">舊樓</button>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-10">
+
+      <div class="case-item luxury bg-gray-800 p-6 rounded text-left">
+        <h3 class="text-yellow-400 font-semibold mb-2">豪宅翻新 · 120萬</h3>
+        <div class="relative overflow-hidden rounded mb-4">
+          <img src="images/job1-after.jpg" class="w-full">
+          <div id="overlay1" class="absolute inset-0 overflow-hidden" style="width:50%">
+            <img src="images/job1-before.jpg" class="w-full">
+          </div>
+          <input type="range" min="0" max="100" value="50"
+            class="absolute bottom-0 w-full"
+            oninput="slide(this,'overlay1')">
+        </div>
+      </div>
+
+      <div class="case-item hos bg-gray-800 p-6 rounded text-left">
+        <h3 class="text-yellow-400 font-semibold mb-2">居屋翻新 · 60萬</h3>
+        <div class="relative overflow-hidden rounded mb-4">
+          <img src="images/job2-after.jpg" class="w-full">
+          <div id="overlay2" class="absolute inset-0 overflow-hidden" style="width:50%">
+            <img src="images/job2-before.jpg" class="w-full">
+          </div>
+          <input type="range" min="0" max="100" value="50"
+            class="absolute bottom-0 w-full"
+            oninput="slide(this,'overlay2')">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-20 px-6 bg-gray-800">
+  <div class="max-w-3xl mx-auto bg-gray-900 p-10 rounded">
+    <h2 class="text-3xl font-bold text-center mb-8">免費報價諮詢</h2>
+
+    <form id="leadForm" class="space-y-6">
+      <input type="text" placeholder="姓名" required class="w-full p-4 rounded bg-gray-800">
+      <input type="tel" placeholder="聯絡電話" required class="w-full p-4 rounded bg-gray-800">
+      <textarea placeholder="裝修需求" rows="4" class="w-full p-4 rounded bg-gray-800"></textarea>
+      <button type="submit" class="w-full bg-yellow-500 text-gray-900 py-4 rounded font-semibold">
+        提交查詢
+      </button>
+    </form>
+
+    <div id="successMessage" class="hidden mt-6 text-green-400 text-center">
+      ✅ 已收到查詢，我們會盡快聯絡你。
+    </div>
+  </div>
+</section>
+
+<footer class="py-6 text-center text-gray-500">
+© 2026 Goodwill Build Alliance
+</footer>
+
+<!-- FLOATING WHATSAPP BUTTON -->
+<button id="whatsappBtn"
+  class="hidden fixed bottom-6 right-6 z-50 
+         bg-green-500 hover:bg-green-400 text-white 
+         px-6 py-4 rounded-full shadow-2xl 
+         text-lg font-semibold transition">
+
+  WhatsApp 報價
+</button>
+
+<!-- BUDGET MODAL -->
+<div id="budgetModal"
+     class="hidden fixed inset-0 bg-black bg-opacity-60 
+            flex items-center justify-center z-50">
+
+  <div class="bg-gray-900 text-white p-8 rounded-lg w-11/12 max-w-md text-center">
+
+    <h3 class="text-2xl font-bold mb-6">請選擇裝修預算</h3>
+
+    <div class="space-y-4">
+
+      <button onclick="goWhatsApp('40-80萬')"
+        class="w-full bg-yellow-500 text-gray-900 py-3 rounded font-semibold hover:bg-yellow-400">
+        HK$40萬 – 80萬
+      </button>
+
+      <button onclick="goWhatsApp('80-120萬')"
+        class="w-full bg-yellow-500 text-gray-900 py-3 rounded font-semibold hover:bg-yellow-400">
+        HK$80萬 – 120萬
+      </button>
+
+      <button onclick="goWhatsApp('120-200萬')"
+        class="w-full bg-yellow-500 text-gray-900 py-3 rounded font-semibold hover:bg-yellow-400">
+        HK$120萬 – 200萬
+      </button>
+
+      <button onclick="closeModal()"
+        class="w-full mt-4 text-gray-400">
+        取消
+      </button>
+
+    </div>
+  </div>
+</div>
+
+<script>
+const whatsappBtn = document.getElementById("whatsappBtn");
+const budgetModal = document.getElementById("budgetModal");
+
+// 滾動 300px 才顯示
+window.addEventListener("scroll", function() {
+  if (window.scrollY > 300) {
+    whatsappBtn.classList.remove("hidden");
+  } else {
+    whatsappBtn.classList.add("hidden");
+  }
+});
+
+// 點擊按鈕開彈窗
+whatsappBtn.addEventListener("click", function() {
+  budgetModal.classList.remove("hidden");
+});
+
+// 關閉彈窗
+function closeModal(){
+  budgetModal.classList.add("hidden");
+}
+
+// 跳去 WhatsApp（改成你電話）
+function goWhatsApp(budget){
+  const phone = "85266988317"; // ✅ 改成你電話
+  const message = encodeURIComponent(
+    "你好，我想了解裝修報價。\n預算範圍：" + budget
+  );
+  window.open("https://wa.me/" + phone + "?text=" + message, "_blank");
+  closeModal();
+}
+</script>
+
+
+<script>
+function slide(range, overlayId){
+  document.getElementById(overlayId).style.width = range.value + "%";
+}
+
+function filterSelection(category){
+  let items = document.getElementsByClassName("case-item");
+  for(let i=0;i<items.length;i++){
+    if(category==="all"){
+      items[i].style.display="block";
+    }else{
+      items[i].style.display=
+        items[i].classList.contains(category)?"block":"none";
+    }
+  }
+}
+
+document.getElementById("leadForm").addEventListener("submit",function(e){
+  e.preventDefault();
+  this.classList.add("hidden");
+  document.getElementById("successMessage").classList.remove("hidden");
+});
+</script>
+
+</body>
+</html>
