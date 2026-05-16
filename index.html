@@ -99,6 +99,8 @@
         <button data-filter="luxury" class="filter-btn bg-gray-700 px-4 py-2 rounded">豪宅</button>
         <button data-filter="hos" class="filter-btn bg-gray-700 px-4 py-2 rounded">居屋</button>
         <button data-filter="old" class="filter-btn bg-gray-700 px-4 py-2 rounded">舊樓</button>
+        <button data-filter="old" class="filter-btn bg-gray-700 px-4 py-2 rounded">清拆項目</button>
+        <button data-filter="old" class="filter-btn bg-gray-700 px-4 py-2 rounded">微水泥項目</button>
       </div>
 
       <div class="grid md:grid-cols-2 gap-8 md:gap-10">
@@ -311,7 +313,7 @@
       btn.addEventListener("click", () => {
         const sizeText = btn.dataset.size;
         const message = `你好，我想查詢裝修工程。%0A%0A單位面積：${encodeURIComponent(sizeText)}%0A%0A請聯絡我，謝謝。`;
-        window.open("https://wa.me/85265988309?text=" + message, "_blank");
+        window.open("https://wa.me/85266988309?text=" + message, "_blank");
         waModal.classList.add("hidden");
       });
     });
