@@ -9,18 +9,30 @@
 
 <body class="bg-gray-900 text-gray-100 font-sans">
 
-<!-- HERO -->
-<section class="py-20 px-6 text-center bg-gradient-to-b from-gray-900 to-gray-800">
-  <div class="max-w-4xl mx-auto">
-    <h1 class="text-3xl md:text-5xl font-bold mb-6"> PrimeBuild Engineering Group</h1>
-    <p class="text-lg md:text-xl text-gray-300 mb-6">
-      專業工程團隊
+<!-- HERO WITH LOGO -->
+<section class="py-24 px-6 text-center bg-gradient-to-b from-gray-900 to-gray-800">
+
+  <div class="max-w-5xl mx-auto">
+
+    <!-- LOGO -->
+    <div class="flex justify-center mb-10">
+      <img src="images/logo.png" 
+           alt="PrimeBuild Engineering Group Logo"
+           class="w-64 md:w-96 object-contain drop-shadow-2xl">
+    </div>
+
+    <!-- Subtitle -->
+    <p class="text-xl md:text-2xl text-gray-300 font-semibold mb-6 tracking-wide">
+      Professional Engineering & Renovation Specialist
     </p>
-    <p class="text-lg text-gray-400 mb-10">
-      專注HK$40萬–200萬住宅全屋裝修翻新項目 · 統一協調管理 · 透明報價
+
+    <!-- Description -->
+    <p class="text-lg text-gray-400 max-w-3xl mx-auto leading-relaxed">
+      專注 HK$40萬–200萬住宅全屋裝修翻新項目 · 統一協調管理 · 嚴格品質監控
     </p>
-    
+
   </div>
+
 </section>
 
 <!-- SERVICES -->
@@ -159,6 +171,24 @@
 <footer class="py-6 text-center text-gray-500">
 © 2026 Goodwill Build Alliance
 </footer>
+
+<!-- FLOATING WHATSAPP BUTTON -->
+<a href="https://wa.me/85260988309?text=你好，我想查詢裝修工程。%0A%0A裝修預算：%0A1️⃣ 40-60萬%0A2️⃣ 60-100萬%0A3️⃣ 100-200萬%0A%0A請聯絡我，謝謝。"
+   target="_blank"
+   class="fixed bottom-6 right-6 z-50 flex items-center space-x-3 
+          bg-green-500 hover:bg-green-400 text-white 
+          px-6 py-4 rounded-full shadow-2xl 
+          text-lg font-semibold transition animate-bounce">
+
+  <svg xmlns="http://www.w3.org/2000/svg" 
+       class="w-6 h-6" 
+       fill="currentColor" 
+       viewBox="0 0 24 24">
+    <path d="M20.52 3.48A11.83 11.83 0 0012.03 0C5.39 0 .01 5.38.01 12.03c0 2.12.55 4.19 1.6 6.02L0 24l6.12-1.6a11.96 11.96 0 005.91 1.5h.01c6.64 0 12.02-5.38 12.02-12.03 0-3.21-1.25-6.22-3.54-8.39zM12.04 21.4c-1.86 0-3.69-.5-5.3-1.46l-.38-.22-3.63.95.97-3.54-.25-.36a9.36 9.36 0 01-1.44-5.05c0-5.17 4.21-9.38 9.39-9.38 2.5 0 4.85.97 6.61 2.74a9.29 9.29 0 012.75 6.64c0 5.18-4.21 9.39-9.39 9.39zm5.14-7.03c-.28-.14-1.65-.81-1.9-.9-.26-.09-.45-.14-.64.14-.19.28-.74.9-.91 1.09-.17.19-.33.21-.61.07-.28-.14-1.19-.44-2.26-1.41-.83-.74-1.39-1.66-1.56-1.94-.16-.28-.02-.43.12-.57.12-.12.28-.31.42-.47.14-.16.19-.28.28-.47.09-.19.05-.35-.02-.49-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.47-.64-.48l-.55-.01c-.19 0-.49.07-.74.35-.26.28-.98.96-.98 2.33s1 2.69 1.14 2.87c.14.19 1.96 3 4.75 4.21.66.29 1.18.46 1.59.59.67.21 1.28.18 1.76.11.54-.08 1.65-.67 1.88-1.32.23-.65.23-1.21.16-1.32-.07-.12-.26-.19-.54-.33z"/>
+  </svg>
+
+  <span class="hidden md:inline">WhatsApp 即時查詢</span>
+</a>
 
 <script>
 function slide(range, overlayId){
