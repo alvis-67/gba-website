@@ -1,471 +1,320 @@
 <!DOCTYPE html>
 <html lang="zh-HK">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PRIME BUILD ENGINEERING </title>
-<script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PRIME BUILD ENGINEERING</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-gray-900 text-gray-100 font-sans">
-<!-- NAVBAR -->
-
-<header class="fixed w-full z-50 bg-white/5 backdrop-blur-md border-b border-white/10">
-<div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
-<!-- LOGO SMALL -->
-<div class="flex items-center space-x-3">
-<img src="images/logo.png"
-alt="PrimeBuild Logo"
-class="h-10 object-contain">
-
-<span class="hidden md:block text-sm tracking-widest text-gray-300">
-PRIME BUILD ENGINEERING GROUP
-
-</span>
-
-</div>
-
-<!-- NAV LINKS -->
-
-<nav class="hidden md:flex space-x-8 text-sm tracking-wide">
-<a href="#" class="hover:text-yellow-400 transition">首頁</a>
-<a href="#services" class="hover:text-yellow-400 transition">服務</a>
-<a href="#cases" class="hover:text-yellow-400 transition">案例</a>
-<a href="#team" class="hover:text-yellow-400 transition">專業團隊</a>
-<a href="#contact" class="hover:text-yellow-400 transition">聯絡我們</a>
-
-</nav>
-</div>
-
-</header>
-
-<!-- HERO -->
-
-<section class="relative pt-40 pb-28 px-6 text-center overflow-hidden">
-
-<!-- 工業質感背景 -->
-
-<div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1503387762-592deb58ef4e')]
-
-bg-cover bg-center opacity-10"></div>
-
-<!-- 暗層 -->
-
-<div class="absolute inset-0 bg-gradient-to-b from-gray-900 via-gray-900/95 to-gray-900"></div>
-
-<div class="relative max-w-5xl mx-auto">
-
-<!-- LOGO -->
-
-<div class="flex justify-center mb-12">
-
-<img src="images/logo.png"
-
-alt="PrimeBuild Engineering Group Logo"
-
-class="w-64 md:w-[420px] object-contain drop-shadow-2xl">
-
-</div>
-
-<!-- Slogan -->
-
-<p class="text-xl md:text-2xl text-gray-300 font-semibold mb-6 tracking-wide">
-
-細節成就品質 · 專業鑄就信任
-
-</p>
-
-<!-- Description -->
-
-<p class="text-lg text-gray-400 max-w-3xl mx-auto leading-relaxed">
-
-專注住宅全屋裝修翻新項目 · 統一協調管理 · 嚴格品質監控
-
-</p>
-
-</div>
-
-</section>
-
-<!-- SERVICES -->
-
-<section id="services" class="py-12 px-6 text-center">
-
-<h2 class="text-3xl font-bold mb-8">服務範圍　一站式全面裝修</h2>
-
-<div class="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-y-4 gap-x-6 text-sm md:text-base">
-
-<div class="flex items-center justify-center space-x-2"><span class="text-yellow-400">•</span><span>室內設計</span></div>
-
-<div class="flex items-center justify-center space-x-2"><span class="text-yellow-400">•</span><span>水電工程</span></div>
-
-<div class="flex items-center justify-center space-x-2"><span class="text-yellow-400">•</span><span>泥水油漆</span></div>
-
-<div class="flex items-center justify-center space-x-2"><span class="text-yellow-400">•</span><span>棚架工程</span></div>
-
-<div class="flex items-center justify-center space-x-2"><span class="text-yellow-400">•</span><span>傢私訂製</span></div>
-
-<div class="flex items-center justify-center space-x-2"><span class="text-yellow-400">•</span><span>清拆工程</span></div>
-
-<div class="flex items-center justify-center space-x-2"><span class="text-yellow-400">•</span><span>不銹鋼玻璃</span></div>
-
-<div class="flex items-center justify-center space-x-2"><span class="text-yellow-400">•</span><span>微水泥工程</span></div>
-
-</div>
-
-</section>
-
-<!-- ✅ 工程案例（已移上） -->
-
-<section id="cases" class="py-20 px-6">
-
-<div class="max-w-6xl mx-auto text-center">
-
-<h2 class="text-3xl font-bold mb-6">工程案例</h2>
-
-<div class="flex justify-center gap-4 mb-10">
-
-<button onclick="filterSelection('all')" class="bg-yellow-500 text-gray-900 px-4 py-2 rounded">全部</button>
-
-<button onclick="filterSelection('luxury')" class="bg-gray-700 px-4 py-2 rounded">豪宅</button>
-
-<button onclick="filterSelection('hos')" class="bg-gray-700 px-4 py-2 rounded">居屋</button>
-
-<button onclick="filterSelection('old')" class="bg-gray-700 px-4 py-2 rounded">舊樓</button>
-
-</div>
-
-<div class="grid md:grid-cols-2 gap-10">
-
-<div class="case-item luxury bg-gray-800 p-6 rounded text-left">
-
-<h3 class="text-yellow-400 font-semibold mb-2">豪宅翻新</h3>
-
-<div class="relative overflow-hidden rounded mb-4">
-
-<img src="images/after.jpg" class="w-full">
-
-<div id="overlay1" class="absolute inset-0 overflow-hidden" style="width:50%">
-
-<img src="images/before.jpg" class="w-full">
-
-</div>
-
-<input type="range" min="0" max="100" value="50"
-
-class="absolute bottom-0 w-full"
-
-oninput="slide(this,'overlay1')">
-
-</div>
-
-</div>
-
-<div class="case-item hos bg-gray-800 p-6 rounded text-left">
-
-<h3 class="text-yellow-400 font-semibold mb-2">居屋翻新</h3>
-
-<div class="relative overflow-hidden rounded mb-4">
-
-<img src="images/before.jpg" class="w-full">
-
-<div id="overlay2" class="absolute inset-0 overflow-hidden" style="width:50%">
-
-<img src="images/after.jpg" class="w-full">
-
-</div>
-
-<input type="range" min="0" max="100" value="50"
-
-class="absolute bottom-0 w-full"
-
-oninput="slide(this,'overlay2')">
-
-</div>
-
-</div>
-
-<div class="case-item hos bg-gray-800 p-6 rounded text-left">
-
-<h3 class="text-yellow-400 font-semibold mb-2">清拆項目</h3>
-
-<div class="relative overflow-hidden rounded mb-4">
-
-<img src="images/before.jpg" class="w-full">
-
-<div id="overlay3" class="absolute inset-0 overflow-hidden" style="width:50%">
-
-<img src="images/after.jpg" class="w-full">
-
-</div>
-
-<input type="range" min="0" max="100" value="50"
-
-class="absolute bottom-0 w-full"
-
-oninput="slide(this,'overlay2')">
-
-</div>
-
-</div>
-
-
-<div class="case-item hos bg-gray-800 p-6 rounded text-left">
-
-<h3 class="text-yellow-400 font-semibold mb-2">微水泥工程</h3>
-
-<div class="relative overflow-hidden rounded mb-4">
-
-<img src="images/before.jpg" class="w-full">
-
-<div id="overlay4" class="absolute inset-0 overflow-hidden" style="width:50%">
-
-<img src="images/after.jpg" class="w-full">
-
-</div>
-
-<input type="range" min="0" max="100" value="50"
-
-class="absolute bottom-0 w-full"
-
-oninput="slide(this,'overlay2')">
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ✅ 專業團隊（已移下） -->
-
-<section id="team" class="py-20 px-6 bg-gray-800 text-center">
-
-<h2 class="text-3xl font-bold mb-12">專業團隊</h2>
-
-<div class="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto">
-
-
-<div class="bg-gray-900 p-6 rounded">
-
-<img src="images/albert.jpeg" class="w-full h-64 object-contain bg-gray-800 rounded mb-4">
-
-<h3 class="text-yellow-400 font-semibold">Albert Wan</h3>
-
-<p class="text-sm text-gray-400">水電工程 · 30年經驗</p>
-
-</div>
-
-<div class="bg-gray-900 p-6 rounded">
-
-<img src="images/ken.jpeg" class="w-full h-64 object-contain bg-gray-800 rounded mb-4">
-
-<h3 class="text-yellow-400 font-semibold">Ken Leung</h3>
-
-<p class="text-sm text-gray-400">泥水油漆 · 15年經驗</p>
-
-</div>
-
-<div class="bg-gray-900 p-6 rounded">
-
-<img src="images/alice.jpeg" class="w-full h-64 object-contain bg-gray-800 rounded mb-4">
-
-<h3 class="text-yellow-400 font-semibold">Alice Chan</h3>
-
-<p class="text-sm text-gray-400">微水泥總代理</p>
-
-</div>
-
-<div class="bg-gray-900 p-6 rounded">
-
-<img src="images/christy.jpeg" class="w-full h-64 object-contain bg-gray-800 rounded mb-4">
-
-<h3 class="text-yellow-400 font-semibold">Christy Lau</h3>
-
-<p class="text-sm text-gray-400">室內設計</p>
-
-</div>
-
-<div class="bg-gray-900 p-6 rounded">
-
-<img src="images/rex.jpeg" class="w-full h-64 object-contain bg-gray-800 rounded mb-4">
-
-<h3 class="text-yellow-400 font-semibold">Rex Ho</h3>
-
-<p class="text-sm text-gray-400">不銹鋼玻璃工程</p>
-
-</div>
-
-<div class="bg-gray-900 p-6 rounded">
-
-<img src="images/derek.jpeg" class="w-full h-64 object-contain bg-gray-800 rounded mb-4">
-
-<h3 class="text-yellow-400 font-semibold">Derek Yu</h3>
-
-<p class="text-sm text-gray-400">清拆工程</p>
-
-</div>
-
-<div class="bg-gray-900 p-6 rounded">
-
-<img src="images/albert.jpeg" class="w-full h-64 object-contain bg-gray-800 rounded mb-4">
-
-<h3 class="text-yellow-400 font-semibold">Axxx xxx</h3>
-
-<p class="text-sm text-gray-400">全屋傢私訂製</p>
-
-</div>
-
-<div class="bg-gray-900 p-6 rounded">
-
-<img src="images/yc.jpeg" class="w-full h-64 object-contain bg-gray-800 rounded mb-4">
-
-<h3 class="text-yellow-400 font-semibold">YC Kwok</h3>
-
-<p class="text-sm text-gray-400">棚架工程</p>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- CONTACT -->
-
-<section id="contact" class="py-20 px-6 bg-gray-800">
-
-<div class="max-w-3xl mx-auto bg-gray-900 p-10 rounded">
-
-<h2 class="text-3xl font-bold text-center mb-8">免費報價諮詢</h2>
-
-<form id="leadForm" class="space-y-6">
-
-<input type="text" placeholder="姓名" required class="w-full p-4 rounded bg-gray-800">
-
-<input type="tel" placeholder="聯絡電話" required class="w-full p-4 rounded bg-gray-800">
-
-<textarea placeholder="裝修需求" rows="4" class="w-full p-4 rounded bg-gray-800"></textarea>
-
-<button type="submit" class="w-full bg-yellow-500 text-gray-900 py-4 rounded font-semibold">
-
-提交查詢
-
-</button>
-
-</form>
-
-<div id="successMessage" class="hidden mt-6 text-green-400 text-center">
-
-✅ 已收到查詢，我們會盡快聯絡你。
-
-</div>
-
-</div>
-
-</section>
-
-<footer class="py-6 text-center text-gray-500">
-
-© 2026 PRIME BUILD ENGINEERING GROUP
-
-</footer>
-
-<!-- FLOATING WHATSAPP BUTTON -->
-
-<button onclick="openWhatsAppSelector()" class="fixed bottom-6 right-6 z-50 flex items-center space-x-3 bg-green-500 hover:bg-green-400 text-white px-6 py-4 rounded-full shadow-2xl text-lg font-semibold transition animate-bounce">
-
-<svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-
-<path d="M20.52 3.48A11.83 11.83 0 0012.03 0C5.39 0 .01 5.38.01 12.03c0 2.12.55 4.19 1.6 6.02L0 24l6.12-1.6a11.96 11.96 0 005.91 1.5h.01c6.64 0 12.02-5.38 12.02-12.03 0-3.21-1.25-6.22-3.54-8.39z"/>
-
-</svg>
-
-<span class="hidden md:inline">WhatsApp 即時查詢</span>
-</button>
-
-<script>
-
-function slide(range, overlayId){
-
-document.getElementById(overlayId).style.width = range.value + "%";
-
-}
-
-function filterSelection(category){
-
-let items = document.getElementsByClassName("case-item");
-
-for(let i=0;i<items.length;i++){
-
-if(category==="all"){
-
-items[i].style.display="block";
-
-}else{
-
-items[i].style.display=
-
-items[i].classList.contains(category)?"block":"none";
-
-}
-
-}
-
-}
-
-document.getElementById("leadForm").addEventListener("submit",function(e){
-
-e.preventDefault();
-
-this.classList.add("hidden");
-
-document.getElementById("successMessage").classList.remove("hidden");
-
-});
-
-function openWhatsAppSelector(){
-
-let choice = prompt(
-
-`請選擇單位面積：
-
-1️⃣ 400尺或以下
-
-2️⃣ 401-800尺
-
-3️⃣ 801-1200尺
-
-4️⃣ 1201尺以上`
-
-);
-
-if(!choice) return;
-
-let sizeText = "";
-
-if(choice == "1") sizeText = "400尺或以下單位";
-
-if(choice == "2") sizeText = "401-800尺單位";
-
-if(choice == "3") sizeText = "801-1200尺單位";
-
-if(choice == "4") sizeText = "1201尺以上單位";
-
-if(sizeText !== ""){
-
-let message = `你好，我想查詢裝修工程。%0A%0A單位面積：${sizeText}%0A%0A請聯絡我，謝謝。`;
-
-window.open("https://wa.me/85265988309?text=" + message, "_blank");
-
-}
-
-}
-
-</script>
-
+  <!-- NAVBAR -->
+  <header class="fixed w-full z-50 bg-white/5 backdrop-blur-md border-b border-white/10">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-4 md:px-6 py-4">
+      <div class="flex items-center space-x-3">
+        <img src="images/logo.png" alt="PrimeBuild Logo" class="h-10 object-contain" />
+        <span class="hidden md:block text-sm tracking-widest text-gray-300">
+          PRIME BUILD ENGINEERING GROUP
+        </span>
+      </div>
+
+      <nav class="hidden md:flex space-x-8 text-sm tracking-wide">
+        <a href="#" class="hover:text-yellow-400 transition">首頁</a>
+        <a href="#services" class="hover:text-yellow-400 transition">服務</a>
+        <a href="#cases" class="hover:text-yellow-400 transition">案例</a>
+        <a href="#team" class="hover:text-yellow-400 transition">專業團隊</a>
+        <a href="#contact" class="hover:text-yellow-400 transition">聯絡我們</a>
+      </nav>
+
+      <!-- Mobile menu button -->
+      <button id="mobileMenuBtn" class="md:hidden text-gray-200 border border-white/20 px-3 py-1 rounded">
+        選單
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="md:hidden hidden border-t border-white/10 bg-gray-900/95">
+      <nav class="flex flex-col px-4 py-3 space-y-3 text-sm tracking-wide">
+        <a href="#" class="hover:text-yellow-400 transition">首頁</a>
+        <a href="#services" class="hover:text-yellow-400 transition">服務</a>
+        <a href="#cases" class="hover:text-yellow-400 transition">案例</a>
+        <a href="#team" class="hover:text-yellow-400 transition">專業團隊</a>
+        <a href="#contact" class="hover:text-yellow-400 transition">聯絡我們</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative pt-36 md:pt-40 pb-24 md:pb-28 px-4 md:px-6 text-center overflow-hidden">
+    <!-- 工業質感背景 -->
+    <div
+      class="absolute inset-0 bg-cover bg-center opacity-10"
+      style="background-image:url('https://images.unsplash.com/photo-1503387762-592deb58ef4e');"
+    ></div>
+
+    <!-- 暗層 -->
+    <div class="absolute inset-0 bg-gradient-to-b from-gray-900 via-gray-900/95 to-gray-900"></div>
+
+    <div class="relative max-w-5xl mx-auto">
+      <div class="flex justify-center mb-10 md:mb-12">
+        <img
+          src="images/logo.png"
+          alt="PrimeBuild Engineering Group Logo"
+          class="w-56 md:w-96 object-contain drop-shadow-2xl"
+        />
+      </div>
+
+      <p class="text-lg md:text-2xl text-gray-300 font-semibold mb-5 md:mb-6 tracking-wide">
+        細節成就品質 · 專業鑄就信任
+      </p>
+
+      <p class="text-base md:text-lg text-gray-400 max-w-3xl mx-auto leading-relaxed">
+        專注住宅全屋裝修翻新項目 · 統一協調管理 · 嚴格品質監控
+      </p>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="py-12 px-4 md:px-6 text-center">
+    <h2 class="text-2xl md:text-3xl font-bold mb-8">服務範圍　一站式全面裝修</h2>
+    <div class="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-y-4 gap-x-4 md:gap-x-6 text-sm md:text-base">
+      <div class="flex items-center justify-center space-x-2"><span class="text-yellow-400">•</span><span>室內設計</span></div>
+      <div class="flex items-center justify-center space-x-2"><span class="text-yellow-400">•</span><span>水電工程</span></div>
+      <div class="flex items-center justify-center space-x-2"><span class="text-yellow-400">•</span><span>泥水油漆</span></div>
+      <div class="flex items-center justify-center space-x-2"><span class="text-yellow-400">•</span><span>棚架工程</span></div>
+      <div class="flex items-center justify-center space-x-2"><span class="text-yellow-400">•</span><span>傢私訂製</span></div>
+      <div class="flex items-center justify-center space-x-2"><span class="text-yellow-400">•</span><span>清拆工程</span></div>
+      <div class="flex items-center justify-center space-x-2"><span class="text-yellow-400">•</span><span>不銹鋼玻璃</span></div>
+      <div class="flex items-center justify-center space-x-2"><span class="text-yellow-400">•</span><span>微水泥工程</span></div>
+    </div>
+  </section>
+
+  <!-- CASES -->
+  <section id="cases" class="py-16 md:py-20 px-4 md:px-6">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-2xl md:text-3xl font-bold mb-6">工程案例</h2>
+
+      <div class="flex justify-center flex-wrap gap-3 md:gap-4 mb-10">
+        <button data-filter="all" class="filter-btn bg-yellow-500 text-gray-900 px-4 py-2 rounded">全部</button>
+        <button data-filter="luxury" class="filter-btn bg-gray-700 px-4 py-2 rounded">豪宅</button>
+        <button data-filter="hos" class="filter-btn bg-gray-700 px-4 py-2 rounded">居屋</button>
+        <button data-filter="old" class="filter-btn bg-gray-700 px-4 py-2 rounded">舊樓</button>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 md:gap-10">
+        <div class="case-item luxury bg-gray-800 p-6 rounded text-left">
+          <h3 class="text-yellow-400 font-semibold mb-2">豪宅翻新</h3>
+          <div class="relative overflow-hidden rounded mb-4">
+            <img src="images/after.jpg" alt="After" class="w-full" />
+            <div id="overlay1" class="absolute inset-0 overflow-hidden" style="width:50%">
+              <img src="images/before.jpg" alt="Before" class="w-full" />
+            </div>
+            <input type="range" min="0" max="100" value="50" class="absolute bottom-0 w-full" oninput="slide(this,'overlay1')" />
+          </div>
+        </div>
+
+        <div class="case-item hos bg-gray-800 p-6 rounded text-left">
+          <h3 class="text-yellow-400 font-semibold mb-2">居屋翻新</h3>
+          <div class="relative overflow-hidden rounded mb-4">
+            <img src="images/before.jpg" alt="Before" class="w-full" />
+            <div id="overlay2" class="absolute inset-0 overflow-hidden" style="width:50%">
+              <img src="images/after.jpg" alt="After" class="w-full" />
+            </div>
+            <input type="range" min="0" max="100" value="50" class="absolute bottom-0 w-full" oninput="slide(this,'overlay2')" />
+          </div>
+        </div>
+
+        <div class="case-item old bg-gray-800 p-6 rounded text-left">
+          <h3 class="text-yellow-400 font-semibold mb-2">清拆項目</h3>
+          <div class="relative overflow-hidden rounded mb-4">
+            <img src="images/before.jpg" alt="Before" class="w-full" />
+            <div id="overlay3" class="absolute inset-0 overflow-hidden" style="width:50%">
+              <img src="images/after.jpg" alt="After" class="w-full" />
+            </div>
+            <input type="range" min="0" max="100" value="50" class="absolute bottom-0 w-full" oninput="slide(this,'overlay3')" />
+          </div>
+        </div>
+
+        <div class="case-item old bg-gray-800 p-6 rounded text-left">
+          <h3 class="text-yellow-400 font-semibold mb-2">微水泥工程</h3>
+          <div class="relative overflow-hidden rounded mb-4">
+            <img src="images/before.jpg" alt="Before" class="w-full" />
+            <div id="overlay4" class="absolute inset-0 overflow-hidden" style="width:50%">
+              <img src="images/after.jpg" alt="After" class="w-full" />
+            </div>
+            <input type="range" min="0" max="100" value="50" class="absolute bottom-0 w-full" oninput="slide(this,'overlay4')" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section id="team" class="py-16 md:py-20 px-4 md:px-6 bg-gray-800 text-center">
+    <h2 class="text-2xl md:text-3xl font-bold mb-12">專業團隊</h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 max-w-6xl mx-auto">
+      <div class="bg-gray-900 p-6 rounded">
+        <img src="images/albert.jpeg" class="w-full h-56 object-contain bg-gray-800 rounded mb-4" alt="Albert Wan" />
+        <h3 class="text-yellow-400 font-semibold">Albert Wan</h3>
+        <p class="text-sm text-gray-400">水電工程 · 30年經驗</p>
+      </div>
+      <div class="bg-gray-900 p-6 rounded">
+        <img src="images/ken.jpeg" class="w-full h-56 object-contain bg-gray-800 rounded mb-4" alt="Ken Leung" />
+        <h3 class="text-yellow-400 font-semibold">Ken Leung</h3>
+        <p class="text-sm text-gray-400">泥水油漆 · 15年經驗</p>
+      </div>
+      <div class="bg-gray-900 p-6 rounded">
+        <img src="images/alice.jpeg" class="w-full h-56 object-contain bg-gray-800 rounded mb-4" alt="Alice Chan" />
+        <h3 class="text-yellow-400 font-semibold">Alice Chan</h3>
+        <p class="text-sm text-gray-400">微水泥總代理</p>
+      </div>
+      <div class="bg-gray-900 p-6 rounded">
+        <img src="images/christy.jpeg" class="w-full h-56 object-contain bg-gray-800 rounded mb-4" alt="Christy Lau" />
+        <h3 class="text-yellow-400 font-semibold">Christy Lau</h3>
+        <p class="text-sm text-gray-400">室內設計</p>
+      </div>
+      <div class="bg-gray-900 p-6 rounded">
+        <img src="images/rex.jpeg" class="w-full h-56 object-contain bg-gray-800 rounded mb-4" alt="Rex Ho" />
+        <h3 class="text-yellow-400 font-semibold">Rex Ho</h3>
+        <p class="text-sm text-gray-400">不銹鋼玻璃工程</p>
+      </div>
+      <div class="bg-gray-900 p-6 rounded">
+        <img src="images/derek.jpeg" class="w-full h-56 object-contain bg-gray-800 rounded mb-4" alt="Derek Yu" />
+        <h3 class="text-yellow-400 font-semibold">Derek Yu</h3>
+        <p class="text-sm text-gray-400">清拆工程</p>
+      </div>
+      <div class="bg-gray-900 p-6 rounded">
+        <img src="images/albert.jpeg" class="w-full h-56 object-contain bg-gray-800 rounded mb-4" alt="Axxx xxx" />
+        <h3 class="text-yellow-400 font-semibold">Axxx xxx</h3>
+        <p class="text-sm text-gray-400">全屋傢私訂製</p>
+      </div>
+      <div class="bg-gray-900 p-6 rounded">
+        <img src="images/yc.jpeg" class="w-full h-56 object-contain bg-gray-800 rounded mb-4" alt="YC Kwok" />
+        <h3 class="text-yellow-400 font-semibold">YC Kwok</h3>
+        <p class="text-sm text-gray-400">棚架工程</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-16 md:py-20 px-4 md:px-6 bg-gray-800">
+    <div class="max-w-3xl mx-auto bg-gray-900 p-6 md:p-10 rounded">
+      <h2 class="text-2xl md:text-3xl font-bold text-center mb-8">免費報價諮詢</h2>
+      <form id="leadForm" class="space-y-6">
+        <input type="text" placeholder="姓名" required class="w-full p-4 rounded bg-gray-800" />
+        <input type="tel" placeholder="聯絡電話" required class="w-full p-4 rounded bg-gray-800" />
+        <textarea placeholder="裝修需求" rows="4" class="w-full p-4 rounded bg-gray-800"></textarea>
+        <button type="submit" class="w-full bg-yellow-500 text-gray-900 py-4 rounded font-semibold">提交查詢</button>
+      </form>
+      <div id="successMessage" class="hidden mt-6 text-green-400 text-center">
+        ✅ 已收到查詢，我們會盡快聯絡你。
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-6 text-center text-gray-500">
+    © 2026 PRIME BUILD ENGINEERING GROUP
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <button
+    id="waBtn"
+    class="fixed bottom-6 right-4 md:right-6 z-50 flex items-center space-x-2 md:space-x-3 bg-green-500 hover:bg-green-400 text-white px-4 md:px-6 py-3 md:py-4 rounded-full shadow-2xl text-sm md:text-lg font-semibold transition"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M20.52 3.48A11.83 11.83 0 0012.03 0C5.39 0 .01 5.38.01 12.03c0 2.12.55 4.19 1.6 6.02L0 24l6.12-1.6a11.96 11.96 0 005.91 1.5h.01c6.64 0 12.02-5.38 12.02-12.03 0-3.21-1.25-6.22-3.54-8.39z"/>
+    </svg>
+    <span class="hidden md:inline">WhatsApp 即時查詢</span>
+    <span class="md:hidden">WhatsApp</span>
+  </button>
+
+  <!-- WhatsApp Modal -->
+  <div id="waModal" class="hidden fixed inset-0 z-50 bg-black/60 flex items-center justify-center px-4">
+    <div class="w-full max-w-md bg-gray-900 border border-white/10 rounded-xl p-6">
+      <h3 class="text-xl font-bold mb-4">請選擇單位面積</h3>
+      <div class="space-y-3">
+        <button class="wa-option w-full text-left bg-gray-800 hover:bg-gray-700 px-4 py-3 rounded" data-size="400尺或以下單位">1️⃣ 400尺或以下</button>
+        <button class="wa-option w-full text-left bg-gray-800 hover:bg-gray-700 px-4 py-3 rounded" data-size="401-800尺單位">2️⃣ 401-800尺</button>
+        <button class="wa-option w-full text-left bg-gray-800 hover:bg-gray-700 px-4 py-3 rounded" data-size="801-1200尺單位">3️⃣ 801-1200尺</button>
+        <button class="wa-option w-full text-left bg-gray-800 hover:bg-gray-700 px-4 py-3 rounded" data-size="1201尺以上單位">4️⃣ 1201尺以上</button>
+      </div>
+      <button id="closeWaModal" class="mt-4 w-full border border-white/20 hover:bg-white/10 px-4 py-2 rounded">
+        取消
+      </button>
+    </div>
+  </div>
+
+  <script>
+    function slide(range, overlayId) {
+      document.getElementById(overlayId).style.width = range.value + "%";
+    }
+
+    function filterSelection(category) {
+      const items = document.getElementsByClassName("case-item");
+      for (let i = 0; i < items.length; i++) {
+        if (category === "all") {
+          items[i].style.display = "block";
+        } else {
+          items[i].style.display = items[i].classList.contains(category) ? "block" : "none";
+        }
+      }
+    }
+
+    // Filter buttons active state
+    document.querySelectorAll(".filter-btn").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const category = btn.dataset.filter;
+        filterSelection(category);
+
+        document.querySelectorAll(".filter-btn").forEach((b) => {
+          b.classList.remove("bg-yellow-500", "text-gray-900");
+          b.classList.add("bg-gray-700");
+        });
+
+        btn.classList.remove("bg-gray-700");
+        btn.classList.add("bg-yellow-500", "text-gray-900");
+      });
+    });
+
+    // Contact form fake submit success
+    document.getElementById("leadForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      this.classList.add("hidden");
+      document.getElementById("successMessage").classList.remove("hidden");
+    });
+
+    // Mobile menu
+    const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+    mobileMenuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+
+    // WhatsApp modal (replace prompt)
+    const waBtn = document.getElementById("waBtn");
+    const waModal = document.getElementById("waModal");
+    const closeWaModal = document.getElementById("closeWaModal");
+
+    waBtn.addEventListener("click", () => {
+      waModal.classList.remove("hidden");
+    });
+
+    closeWaModal.addEventListener("click", () => {
+      waModal.classList.add("hidden");
+    });
+
+    waModal.addEventListener("click", (e) => {
+      if (e.target === waModal) waModal.classList.add("hidden");
+    });
+
+    document.querySelectorAll(".wa-option").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const sizeText = btn.dataset.size;
+        const message = `你好，我想查詢裝修工程。%0A%0A單位面積：${encodeURIComponent(sizeText)}%0A%0A請聯絡我，謝謝。`;
+        window.open("https://wa.me/85265988309?text=" + message, "_blank");
+        waModal.classList.add("hidden");
+      });
+    });
+  </script>
 </body>
-
 </html>
