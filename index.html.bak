@@ -9,53 +9,21 @@
 
 <body class="bg-gray-900 text-gray-100 font-sans">
 
-<!-- NAVBAR -->
-<header class="fixed w-full z-50 bg-white/5 backdrop-blur-md border-b border-white/10">
-  <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+<!-- HERO WITH LOGO -->
+<section class="py-24 px-6 text-center bg-gradient-to-b from-gray-900 to-gray-800">
 
-    <!-- LOGO SMALL -->
-    <div class="flex items-center space-x-3">
-      <img src="images/logo.png" 
-           alt="PrimeBuild Logo" 
-           class="h-10 object-contain">
-      <span class="hidden md:block text-sm tracking-widest text-gray-300">
-        ENGINEERING GROUP
-      </span>
-    </div>
-
-    <!-- NAV LINKS -->
-    <nav class="hidden md:flex space-x-8 text-sm tracking-wide">
-      <a href="#" class="hover:text-yellow-400 transition">首頁</a>
-      <a href="#services" class="hover:text-yellow-400 transition">服務</a>
-      <a href="#cases" class="hover:text-yellow-400 transition">案例</a>
-      <a href="#contact" class="hover:text-yellow-400 transition">聯絡我們</a>
-    </nav>
-
-  </div>
-</header>
-
-<!-- HERO -->
-<section class="relative pt-40 pb-28 px-6 text-center overflow-hidden">
-
-  <!-- 工業質感背景 -->
-  <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1503387762-592deb58ef4e')] 
-              bg-cover bg-center opacity-10"></div>
-
-  <!-- 暗層 -->
-  <div class="absolute inset-0 bg-gradient-to-b from-gray-900 via-gray-900/95 to-gray-900"></div>
-
-  <div class="relative max-w-5xl mx-auto">
+  <div class="max-w-5xl mx-auto">
 
     <!-- LOGO -->
-    <div class="flex justify-center mb-12">
-      <img src="images/logo.png"
+    <div class="flex justify-center mb-10">
+      <img src="images/logo.png" 
            alt="PrimeBuild Engineering Group Logo"
-           class="w-64 md:w-[420px] object-contain drop-shadow-2xl">
+           class="w-64 md:w-96 object-contain drop-shadow-2xl">
     </div>
 
-    <!-- Slogan -->
+    <!-- Subtitle -->
     <p class="text-xl md:text-2xl text-gray-300 font-semibold mb-6 tracking-wide">
-      Professional Engineering & Construction Specialist
+      Professional Engineering & Renovation Specialist
     </p>
 
     <!-- Description -->
@@ -64,6 +32,7 @@
     </p>
 
   </div>
+
 </section>
 
 <!-- SERVICES -->
